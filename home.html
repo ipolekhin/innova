@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Innova1</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page__body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-arr-right" viewBox="0 0 24 24">
+        <path d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-arr-slider" viewBox="0 0 93 8" fill="none">
+        <path d="M0.799492 3.36067C0.604233 3.55593 0.604233 3.87252 0.799492 4.06778L3.98147 7.24976C4.17673 7.44502 4.49332 7.44502 4.68858 7.24976C4.88384 7.0545 4.88384 6.73791 4.68858 6.54265L1.86015 3.71422L4.68858 0.885797C4.88384 0.690535 4.88384 0.373953 4.68858 0.178691C4.49332 -0.0165716 4.17674 -0.0165716 3.98148 0.178691L0.799492 3.36067ZM92.3472 3.21423L1.15305 3.21422L1.15305 4.21422L92.3472 4.21423L92.3472 3.21423Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-arr-services" viewBox="0 0 38 8" fill="none">
+        <path d="M0.544487 3.78218C0.349224 3.97744 0.349224 4.29403 0.544487 4.48929L3.72647 7.67127C3.92173 7.86653 4.23831 7.86653 4.43357 7.67127C4.62884 7.47601 4.62884 7.15943 4.43357 6.96416L1.60515 4.13574L4.43358 1.30731C4.62884 1.11205 4.62884 0.795465 4.43358 0.600202C4.23831 0.40494 3.92173 0.40494 3.72647 0.600202L0.544487 3.78218ZM37.3252 3.63574L0.898041 3.63574L0.898041 4.63574L37.3252 4.63574L37.3252 3.63574Z" fill="currentColor"/>
+      </symbol>
+    </svg>
+
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo-link" href="#">
+            <img class="page-header__logo" src="./img/logo.svg" alt="ИННОВА" width="189" height="60">
+          </a>
+
+          <nav class="main-nav main-nav_closed main-nav_nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list nav__list">
+                <li class="nav__item nav__item_town">
+                    Ваш&nbsp;город:&nbsp;
+                    <span class="nav__town-selected">Москва</span>
+
+                    <ul class="nav__sub-list">
+                      <li class="nav__sub-item" data-town="moscow">Москва</li>
+                      <li class="nav__sub-item" data-town="balashiha">Балашиха</li>
+                      <li class="nav__sub-item" data-town="podolsk">Подольск</li>
+                      <li class="nav__sub-item" data-town="himki">Химки</li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                  <div class="nav__hover-sub">
+                    <a href="about.html">О компании</a>
+                  </div>
+
+                  <ul class="nav__sub-list">
+                    <li class="nav__sub-item"><a href="#">Контакты1</a></li>
+                    <li class="nav__sub-item"><a href="#">Контакты2</a></li>
+                    <li class="nav__sub-item"><a href="#">Контакты3</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav__item">
+                  <div class="nav__hover-sub">
+                    <a href="services.html">Услуги</a>
+                  </div>
+
+                  <ul class="nav__sub-list">
+                    <li class="nav__sub-item"><a href="#">Услуги-1</a></li>
+                    <li class="nav__sub-item"><a href="#">Услуги-2</a></li>
+                    <li class="nav__sub-item"><a href="#">Услуги-3</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav__item">
+                  <a href="portfolio.html">Портфолио</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="articles.html">Статьи</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+
+              <div class="page-header__social social social_page-header">
+                <div class="social__text">Следуйте за нами:</div>
+
+                <a class="social__link" href="#">
+                  <img src="./img/icon-soc-wh.svg" alt="Социальная есть Whatsap" width="20" height="20"/>
+                </a>
+
+                <a class="social__link" href="#">
+                  <img src="./img/icon-soc-tw.svg" alt="Социальная есть Twitter" width="20" height="20"/>
+                </a>
+
+                <a class="social__link" href="#">
+                  <img src="./img/icon-soc-ms.svg" alt="Messenger" width="20" height="20"/>
+                </a>
+
+                <a class="social__link" href="#">
+                  <img src="./img/icon-soc-sk.svg" alt="Skype" width="20" height="20"/>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="page-header__contacts">
+            <a class="page-header__phone" href="tel:+74957874878">
+              +7 495 787-48-78
+            </a>
+
+            <a class="page-header__email" href="mailto:info@innova-c.ru">
+              info@innova-c.ru
+            </a>
+          </div>
+
+          <div class="page-header__lang">
+            <span class="nav__lang-selected">RUS</span>
+
+            <ul class="nav__sub-list">
+              <li class="nav__sub-item" data-lang="RUS">RUS</li>
+              <li class="page__sub-item" data-lang="EN">EN</li>
+            </ul>
+          </div>
+
+          <a class="page-header__calc" href="#">
+            Заказать расчет
+          </a>
+
+          <button class="page-header__call">
+            <img src="img/icon-call.svg" alt="Заказать звонок" width="40" height="40"/>
+          </button>
+        </div>
+
+        <div class="page-header__body">
+          <h1>Решение сложных инженерных задач в строительстве</h1>
+          <span class="page__headline">строим  и проектируем с 2011 года</span>
+
+          <p>Располагая современным оборудованием, используя лучшие материалы и технологии, мы обеспечиваем высокое качество строительных и ремонтных работ в кратчайшие сроки.</p>
+
+          <a class="button" href="#">Консультация со специалистом</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="about">
+        <div class="about__slider-for slider__about-for">
+          <div class="slider__item about__wrapper-text">
+            <h2 class="about__title">Мы компания иннова 1</h2>
+
+            <span class="page__headline">давайте знакомиться</span>
+
+            <div class="about__description">
+              <p>1Gravida elementum elementum viverra egestas. Quis ut nunc dui tellus, nunc, quis dictum rhoncus.</p>
+
+              <p>1Компания ООО «ИННОВА» эффективно выполняет работы в области передовых строительных технологий по усилению конструкций, ремонту и защите железобетона, гидроизоляции зданий и сооружений. Успешно справляется с выполнением задач по обследованию объектов и с важнейшим этапом строительства – проектированием. В штате нашей компании находятся профессиональные сотрудники, которые на высоком уровне способны разработать технические решения по восстановительной работе, […]</p>
+            </div>
+
+            <a class="page__read-more" href="#">Читать подробнее 1</a>
+          </div>
+
+          <div class="slider__item about__wrapper-text">
+            <h2 class="about__title">Мы компания иннова 2</h2>
+
+            <span class="page__headline">давайте знакомиться</span>
+
+            <div class="about__description">
+              <p>2Gravida elementum elementum viverra egestas. Quis ut nunc dui tellus, nunc, quis dictum rhoncus.</p>
+
+              <p>3Компания ООО «ИННОВА» эффективно выполняет работы в области передовых строительных технологий по усилению конструкций, ремонту и защите железобетона, гидроизоляции зданий и сооружений. Успешно справляется с выполнением задач по обследованию объектов и с важнейшим этапом строительства – проектированием. В штате нашей компании находятся профессиональные сотрудники, которые на высоком уровне способны разработать технические решения по восстановительной работе, […]</p>
+            </div>
+
+            <a class="page__read-more" href="#">Читать подробнее 2</a>
+          </div>
+
+          <div class="slider__item about__wrapper-text">
+            <h2 class="about__title">Мы компания иннова 3</h2>
+
+            <span class="page__headline">давайте знакомиться</span>
+
+            <div class="about__description">
+              <p>3Gravida elementum elementum viverra egestas. Quis ut nunc dui tellus, nunc, quis dictum rhoncus.</p>
+
+              <p>3Компания ООО «ИННОВА» эффективно выполняет работы в области передовых строительных технологий по усилению конструкций, ремонту и защите железобетона, гидроизоляции зданий и сооружений. Успешно справляется с выполнением задач по обследованию объектов и с важнейшим этапом строительства – проектированием. В штате нашей компании находятся профессиональные сотрудники, которые на высоком уровне способны разработать технические решения по восстановительной работе, […]</p>
+            </div>
+
+            <a class="page__read-more" href="#">Читать подробнее 3</a>
+          </div>
+        </div>
+
+        <ul class="about__advantages">
+          <li class="about__advantage"><span>Инновационные технологии</span></li>
+          <li class="about__advantage"><span>Безупречная репутация</span></li>
+          <li class="about__advantage"><span>Соответствие стандартам</span></li>
+          <li class="about__advantage"><span>Гарантия качества работ</span></li>
+          <li class="about__advantage"><span>Доступная стоимость услуг</span></li>
+        </ul>
+
+        <div class="about__slider">
+          <div class="slider__list slider__about">
+            <div class="slider__item">
+              <img src="./img/about-slide-1.jpg" alt="слайд 1"/>
+            </div>
+
+            <div class="slider__item">
+              <img src="./img/about-slide-1.jpg" alt="слайд 2"/>
+            </div>
+
+            <div class="slider__item">
+              <img src="./img/about-slide-1.jpg" alt="слайд 3"/>
+            </div>
+          </div>
+
+          <div class="about__slider-nav">
+            <button class="about__slider-nav-preview">
+              <svg class="services__icon-arr" width="93" height="8" fill="none">
+                <use xlink:href="#icon-arr-slider"></use>
+              </svg>
+            </button>
+
+            <button class="about__slider-nav-next">
+              <svg class="services__icon-arr" width="93" height="8" fill="none">
+                <use xlink:href="#icon-arr-slider"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services__head">
+          <h2 class="services__title">Наши услуги</h2>
+
+          <span class="page__headline">Полный перечень</span>
+        </div>
+
+        <div class="services__slider">
+          <div class="services__slider-wrapper slider__list slider__services">
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                Гидроизоляция методом инъектирования
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-1.jpg" alt="слайд 1"/>
+            </div>
+
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                Усиление железобетонных конструкций
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-2.jpg" alt="слайд 2"/>
+            </div>
+
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                Обследование зданий и&nbsp;сооружений
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-3.jpg" alt="слайд 3"/>
+            </div>
+
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                Проектирование
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-4.jpg" alt="слайд 4"/>
+            </div>
+
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                Разработка проектов усиления
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-5.jpg" alt="слайд 5"/>
+            </div>
+
+            <div class="services__slider-item slider__item">
+              <div class="services__slide-body">
+                2Разработка проектов усиления2
+
+                <button class="services__slide-burger"></button>
+              </div>
+
+              <img class="services__slide" src="./img/bg-services-5.jpg" alt="слайд 5"/>
+            </div>
+          </div>
+
+          <div class="services__slider-nav">
+            <button class="services__slider-nav-preview">
+              <svg class="services__icon-arr" width="38" height="8" fill="none">
+                <use xlink:href="#icon-arr-services"></use>
+              </svg>
+            </button>
+
+            <button class="services__slider-nav-next">
+              <svg class="services__icon-arr" width="38" height="8" fill="none">
+                <use xlink:href="#icon-arr-services"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-work">
+        <div class="steps-work__head">
+          <h2 class="steps-work__title">Этапы работы</h2>
+
+          <span class="page__headline">сотрудничество</span>
+        </div>
+
+        <ul class="steps-work__list">
+          <li class="steps-work__item">
+            <b>Шаг 1</b>
+            Обследование
+          </li>
+
+          <li class="steps-work__item">
+            <b>Шаг 2</b>
+            Проектирование
+          </li>
+
+          <li class="steps-work__item">
+            <b>Шаг 3</b>
+            Оценка проекта
+          </li>
+
+          <li class="steps-work__item">
+            <b>Шаг 4</b>
+            Выполнение работ
+          </li>
+
+          <li class="steps-work__item">
+            <b>Шаг 5</b>
+            Последующий мониторинг
+          </li>
+        </ul>
+      </section>
+
+      <section class="technique-materials">
+        <div class="technique-materials__bg-house">
+          <img src="./img/bg-material.png" alt="" width="1524" height="1164"/>
+        </div>
+
+        <div class="technique-materials__wrapper">
+          <ul class="technique-materials__brands">
+            <li><img src="./img/material-brand-1.png" alt=""/></li>
+            <li><img src="./img/material-brand-2.png" alt=""/></li>
+            <li><img src="./img/material-brand-3.png" alt=""/></li>
+            <li><img src="./img/material-brand-4.png" alt=""/></li>
+            <li><img src="./img/material-brand-5.png" alt=""/></li>
+            <li><img src="./img/material-brand-6.png" alt=""/></li>
+            <li><img src="./img/material-brand-7.png" alt=""/></li>
+            <li><img src="./img/material-brand-8.png" alt=""/></li>
+            <li><img src="./img/material-brand-9.png" alt=""/></li>
+          </ul>
+
+          <div class="technique-materials__wrapper-text">
+            <div class="technique-materials__head">
+              <h2 class="technique-materials__title">Технологии и Материалы</h2>
+
+              <span class="page__headline">Как мы работаем</span>
+            </div>
+
+            <div class="technique-materials__body">
+              <details>
+                <summary>Рулонная кровля Технониколь</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                  <li>ТПО мембрана Sintofoil RG 1,5 мм серая 2,10×25 м</li>
+                  <li>ТПО мембрана Sintofoil RT 1,2 мм серая 2,10×25 м</li>
+                  <li>ПВХ мембрана Logicroof V-SR 1,5 мм серая 1×10 м 2 шт</li>
+                  <li>ПВХ мембрана Logicroof Walkway Puzzle серая 0,6×0,6 м</li>
+                  <li>ПВХ мембрана Ecoplast V-RP серая 1,2 мм 2,1×20 м</li>
+                  <li>ПВХ мембрана Logicroof V-RP 1,5 мм зеленая RAL 6011 2,05×20 м</li>
+                  <li>Воронка Технониколь с обогревом 160×450 мм</li>
+                  <li>Воронка Технониколь ВБ 110х450 мм</li>
+                  <li>Воронка ВБ ЭКО Технониколь 110х145 мм</li>
+                </ul>
+              </details>
+
+              <details>
+                <summary>Системы Внешнего армирования</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                </ul>
+              </details>
+
+              <details >
+                <summary>Огнезащитное покрытие для систем внешнего армирования</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                </ul>
+              </details>
+
+              <details >
+                <summary>Цементные ремонтные составы</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                </ul>
+              </details>
+
+              <details >
+                <summary>Полимерные ремонтные составы</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                </ul>
+              </details>
+
+              <details >
+                <summary>Инъекционные составы для склеивания и гидроизоляции</summary>
+
+                <ul>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭПП 1×10 м</li>
+                  <li>Рулонная кровля Технониколь Техноэласт ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Унифлекс ЭКП 1×10 м сланец серый</li>
+                  <li>Рулонная кровля Технониколь Биполь ЭПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Бикроэласт ТПП 1×15 м</li>
+                  <li>Рулонная кровля Технониколь Линокром ХКП 1×10 м сланец серый</li>
+                  <li>Праймер Технониколь №03 20 л битумно-полимерный</li>
+                  <li>ТПО мембрана Logicroof P-SL 2,0 мм оранжевая 2,10×20 м</li>
+                  <li>ТПО мембрана Logicbase P-SL 2,0 мм бежевая 2,10×20 мм2рул</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="works__head">
+          <div class="works__headline-left">
+            <h2 class="works__title">выполненные проекты</h2>
+
+            <span class="page__headline">наша работа</span>
+          </div>
+
+          <div class="works__preview-slide">
+            <img class="works__preview-slide-img" src="./img/work-preview.jpg" alt="" width="160" height="70"/>
+
+            МФОЦШД “Будапешт”
+          </div>
+        </div>
+
+        <div class="works__slider-body">
+          <div class="works__slider-for slider__works-for">
+            <div class="slider-for__item">
+              <dl class="works__body-text">
+                <dt>заказчик</dt>
+                <dd class="works__body-text-c">1Гостиница</dd>
+
+                <dt>Год:</dt>
+                <dd class="works__body-text-c">2019</dd>
+
+                <dt>объект:</dt>
+                <dd>Гостиница, по адресу: г. Москва, ул. Земляной Вал, вл. 70</dd>
+
+                <dt>Задача:</dt>
+                <dd>Усиление конструкций</dd>
+
+                <dt>решение:</dt>
+                <dd>Ремонт дефектных участков бетона цементным составом; выравнивание бетонной поверхности ремонтным составом Sikadur 31 СF Normal; усиление ж/б конструкций металлом, а также композитными материалами; нанесение огнезащитного покрытия WallGraf ОКМ-1</dd>
+
+                <dd><a class="page__read-more" href="#">Читать подробнее1</a></dd>
+              </dl>
+            </div>
+
+            <div class="slider-for__item">
+              <dl class="works__body-text">
+                <dt>заказчик</dt>
+                <dd class="works__body-text-c">2Гостиница</dd>
+
+                <dt>Год:</dt>
+                <dd class="works__body-text-c">2019</dd>
+
+                <dt>объект:</dt>
+                <dd>Гостиница, по адресу: г. Москва, ул. Земляной Вал, вл. 70</dd>
+
+                <dt>Задача:</dt>
+                <dd>Усиление конструкций</dd>
+
+                <dt>решение:</dt>
+                <dd>Ремонт дефектных участков бетона цементным составом; выравнивание бетонной поверхности ремонтным составом Sikadur 31 СF Normal; усиление ж/б конструкций металлом, а также композитными материалами; нанесение огнезащитного покрытия WallGraf ОКМ-1</dd>
+
+                <dd><a class="page__read-more" href="#">Читать подробнее2</a></dd>
+              </dl>
+            </div>
+
+            <div class="slider-for__item">
+              <dl class="works__body-text">
+                <dt>заказчик</dt>
+                <dd class="works__body-text-c">3Гостиница</dd>
+
+                <dt>Год:</dt>
+                <dd class="works__body-text-c">2019</dd>
+
+                <dt>объект:</dt>
+                <dd>Гостиница, по адресу: г. Москва, ул. Земляной Вал, вл. 70</dd>
+
+                <dt>Задача:</dt>
+                <dd>Усиление конструкций</dd>
+
+                <dt>решение:</dt>
+                <dd>Ремонт дефектных участков бетона цементным составом; выравнивание бетонной поверхности ремонтным составом Sikadur 31 СF Normal; усиление ж/б конструкций металлом, а также композитными материалами; нанесение огнезащитного покрытия WallGraf ОКМ-1</dd>
+
+                <dd><a class="page__read-more" href="#">Читать подробнее 3</a></dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="works__slider">
+            <div class="slider__list slider__works">
+              <div class="slider__item">
+                <img src="./img/works-slide-1.jpg" alt="слайд 1"/>
+              </div>
+
+                <div class="slider__item">
+                <img src="./img/works-slide-1.jpg" alt="слайд 2"/>
+              </div>
+
+              <div class="slider__item">
+                <img src="./img/works-slide-1.jpg" alt="слайд 3"/>
+              </div>
+            </div>
+
+            <div class="works__slider-nav">
+              <button class="works__slider-nav-preview">
+                <svg class="services__icon-arr" width="93" height="8" fill="none">
+                  <use xlink:href="#icon-arr-slider"></use>
+                </svg>
+              </button>
+
+              <button class="works__slider-nav-next">
+                <svg class="services__icon-arr" width="93" height="8" fill="none">
+                  <use xlink:href="#icon-arr-slider"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles__head">
+          <h2 class="articles__title">статьи и новости</h2>
+
+          <span class="page__headline">делимся полезной информацией</span>
+        </div>
+
+        <ul class="articles__list">
+          <li class="articles__item">
+            <div class="articles__body">
+              <div class="articles__date-public">03-11-2020 | 15:44:08</div>
+
+              <h3 class="articles__body-title">Композиция глобальной индустрии</h3>
+
+              <a class="page__read-more page__read-more_bg" href="#">
+                Читать подробнее
+
+                <svg class="page__icon-more" width="24" height="24">
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <img class="articles__img" src="./img/articles-slide-1.jpg" alt="слайд 1"/>
+          </li>
+
+          <li class="articles__item articles__item_active">
+            <div class="articles__body">
+              <div class="articles__date-public">03-11-2020 | 15:44:08</div>
+
+              <h3 class="articles__body-title">Импортные системы внешнего армирования</h3>
+
+              <div class="articles__body-descr">
+                <p>Verkehrskonzepte sind ein entscheidender Faktor jeglicher Infrastruktur. Das Ingenieurbüro Weiss hat deshalb ein Expertenteam aufgebaut.</p>
+              </div>
+
+              <a class="articles__more page__read-more page__read-more_bg" href="#">
+                Читать подробнее
+
+                <svg class="page__icon-more" width="24" height="24">
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="articles__item">
+            <div class="articles__body">
+              <div class="articles__date-public">03-11-2020 | 15:44:08</div>
+
+              <h3 class="articles__body-title">Композиция глобальной индустрии</h3>
+
+              <a class="page__read-more page__read-more_bg" href="#">
+                Читать подробнее
+
+                <svg class="page__icon-more" width="24" height="24">
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <img class="articles__img" src="./img/articles-slide-2.jpg" alt="слайд 2"/>
+          </li>
+
+          <li class="articles__item">
+            <div class="articles__body">
+              <div class="articles__date-public">03-11-2020 | 15:44:08</div>
+
+              <h3 class="articles__body-title">Композиция глобальной индустрии</h3>
+
+              <a class="page__read-more page__read-more_bg" href="#">
+                Читать подробнее
+
+                <svg class="page__icon-more" width="24" height="24">
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <img class="articles__img" src="./img/articles-slide-3.jpg" alt="слайд 1"/>
+          </li>
+
+          <li class="articles__item">
+            <div class="articles__body">
+              <div class="articles__date-public">03-11-2020 | 15:44:08</div>
+
+              <h3 class="articles__body-title">Композиция глобальной индустрии</h3>
+
+              <a class="page__read-more page__read-more_bg" href="#">
+                Читать подробнее
+
+                <svg class="page__icon-more" width="24" height="24">
+                  <use xlink:href="#icon-arr-right"></use>
+                </svg>
+              </a>
+            </div>
+
+            <img class="articles__img" src="./img/articles-slide-4.jpg" alt="слайд 1"/>
+          </li>
+        </ul>
+      </section>
+
+      <section class="partners">
+        <div class="partners__head">
+          <h2 class="partners__title">наши партнеры</h2>
+
+          <span class="page__headline">производство</span>
+        </div>
+
+        <div class="partners__list">
+          <img class="partners__img" src="./img/partners-1.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-2.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-3.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-4.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-5.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-6.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-7.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-8.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-9.png" alt="" width="120" height="120"/>
+          <img class="partners__img" src="./img/partners-10.png" alt="" width="120" height="120"/>
+        </div>
+      </section>
+
+      <section class="customer-reviews">
+        <div class="customer-reviews__head">
+          <h2 class="customer-reviews__title">отзывы наших клиентов</h2>
+
+          <span class="page__headline">письма и благодарности</span>
+        </div>
+
+        <div class="customer-reviews__list">
+          <img class="customer-reviews__img" src="./img/reviews-1.jpg" alt="" width="292" height="433"/>
+          <img class="customer-reviews__img" src="./img/reviews-2.jpg" alt="" width="292" height="433"/>
+          <img class="customer-reviews__img" src="./img/reviews-3.jpg" alt="" width="292" height="433"/>
+          <img class="customer-reviews__img" src="./img/reviews-4.jpg" alt="" width="292" height="433"/>
+          <img class="customer-reviews__img" src="./img/reviews-5.jpg" alt="" width="292" height="433"/>
+        </div>
+      </section>
+
+      <section class="consultation">
+        <div class="consultation__head">
+          <h2 class="consultation__title">воспользуйтесь бесплатной консультацией</h2>
+
+          <span class="consultation__headline page__headline">помощь специалиста</span>
+        </div>
+
+        <form class="consultation__form form form_consultation" method="post" enctype="multipart/form-data">
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__field" type="text" name="name" placeholder="Имя" required="" value=""/>
+
+              <span class="form__sub-text">Имя</span>
+            </li>
+
+            <li class="form__item">
+              <input class="form__field" type="tel" name="phone" placeholder="Телефон" value=""/>
+
+              <span class="form__sub-text">Телефон</span>
+            </li>
+
+            <li class="form__item">
+              <input class="form__field" type="email" name="email" placeholder="E-mail" value=""/>
+
+              <span class="form__sub-text">E-mail</span>
+            </li>
+
+            <li class="form__item">
+              <input id="file-input" class="form__field form__field_file" type="file" name="file" multiple/>
+
+              <label class="form__file-upload" for="file-input">
+                Загрузить файлы
+              </label>
+
+              <script>
+                let field = document.querySelector('.form__field_file');
+                let label = field.nextElementSibling;
+
+                field.addEventListener('change', function () {
+                  let countFiles = '';
+                  if (this.files && this.files.length >= 1)
+                    countFiles = this.files.length;
+
+                  if (countFiles)
+                    label.innerText = 'Выбрано файлов: ' + countFiles;
+                  else
+                    label.innerText = labelVal;
+                });
+              </script>
+            </li>
+
+            <li class="form__item form__item_btn">
+              <input class="form__button button" type="submit" value="Получить консультацию">
+            </li>
+          </ul>
+
+          <label class="form__label-law" for="152-federal-law">
+            <input id="152-federal-law" class="form__input-law" type="checkbox" name="personal" required="" checked="">
+
+            <svg class="form__icon-check" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="form__icon-path" d="M9.5 11L12.5 14L22.5 4" stroke="#D1B296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.5 12V19C21.5 19.5304 21.2893 20.0391 20.9142 20.4142C20.5391 20.7893 20.0304 21 19.5 21H5.5C4.96957 21 4.46086 20.7893 4.08579 20.4142C3.71071 20.0391 3.5 19.5304 3.5 19V5C3.5 4.46957 3.71071 3.96086 4.08579 3.58579C4.46086 3.21071 4.96957 3 5.5 3H16.5" stroke="#D1B296" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <span>Согласен(а) на обработку персональных данных</span>
+          </label>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__body">
+        <img class="page-footer__logo" src="./img/logo.svg" alt="ИННОВА" width="189" height="60">
+
+        <div class="page-footer__nav">
+          <ul>
+            <li><a href="#">ГИДРОИЗОЛЯЦИЯ</a></li>
+            <li><a href="#">ПРОЕКТИРОВАНИЕ</a></li>
+            <li><a href="#">ТОРКРЕТИРОВАНИЕ</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">УСИЛЕНИЕ ЖЕЛЕЗОБЕТОННЫХ КОНСТРУКЦИЙ</a></li>
+            <li><a href="#">УСТРОЙСТВО НАПОЛЬНЫХ ПОКРЫТИЙ</a></li>
+            <li><a href="#">УСТРОЙСТВО ПЛОСКИХ КРОВЕЛЬ</a></li>
+          </ul>
+        </div>
+
+        <dl class="page-footer__phone">
+          <dt>телефоны:</dt>
+          <dd>+7 495 787-48-78</dd>
+          <dd>+7 495 787-48-78</dd>
+        </dl>
+
+        <dl class="page-footer__email">
+          <dt>E-mail:</dt>
+          <dd>info@innova-c.ru</dd>
+        </dl>
+
+        <dl class="page-footer__address">
+          <dt>Адрес:</dt>
+          <dd>г. Москва, Варшавское ш., 42, БЦ на Варшавке</dd>
+        </dl>
+
+        <div class="page-footer__social social social_page-footer">
+          <div class="social__text">Следуйте за нами:</div>
+
+          <div class="social__icons">
+            <a class="social__link" href="#">
+              <img src="./img/icon-soc-wh.svg" alt="Социальная есть Whatsap" width="20" height="20"/>
+            </a>
+
+            <a class="social__link" href="#">
+              <img src="./img/icon-soc-tw.svg" alt="Социальная есть Twitter" width="20" height="20"/>
+            </a>
+
+            <a class="social__link" href="#">
+              <img src="./img/icon-soc-ms.svg" alt="Messenger" width="20" height="20"/>
+            </a>
+
+            <a class="social__link" href="#">
+              <img src="./img/icon-soc-sk.svg" alt="Skype" width="20" height="20"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer__copyright">© 2020. Все права защищены. Группа компаний ИННОВА.</div>
+    </footer>
+
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/lib/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
